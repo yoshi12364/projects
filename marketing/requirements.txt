@@ -1,0 +1,6 @@
+openai
+pandas
+resend
+pillow
+langgraph
+python-dotenv
