@@ -11,7 +11,7 @@ from tavily import TavilyClient
 # 1. CLIENT
 model_client = OpenAIChatCompletionClient(
     model="mistral-large-latest",
-    api_key="G5z8pqiJOcoog6Mwh4vZk4GZn5ZH3tK0",
+    api_key="paste your own api key here",
     base_url="https://api.mistral.ai/v1",
     model_info={
         "vision": False,
@@ -22,7 +22,7 @@ model_client = OpenAIChatCompletionClient(
     }
 )
 
-tavily = TavilyClient(api_key="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")
+tavily = TavilyClient(api_key="paste your own api key here")
 
 # 2. RATE LIMIT GUARD
 LLM_DELAY = 20
@@ -91,7 +91,7 @@ def collect_web_results() -> str:
 
 def jsearch_query(query: str, max_results: int = 2) -> list:
     headers = {
-        "X-RapidAPI-Key":  "7a388faff8msh2d74ced4d069c81p1f59f1jsndb742b15389f",
+        "X-RapidAPI-Key":  "paste your own api key here",
         "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     }
     params = {"query": query, "page": "1", "num_pages": "1"}

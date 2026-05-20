@@ -31,7 +31,7 @@ def verify_password(plain: str, hashed: str):
         return False
 
 # ---------------- DATABASE ----------------
-DATABASE_URL = "postgresql://postgres:yoshitha.2@localhost:5432/userdb"
+DATABASE_URL = "postgresql://postgres:paste your own password here@localhost:5432/userdb"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
